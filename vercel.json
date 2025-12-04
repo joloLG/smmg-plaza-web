@@ -16,7 +16,7 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://${VERCEL_URL}",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
@@ -26,6 +26,14 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "FILESYSTEM_DISK": "local",
+        "MAIL_MAILER": "smtp",
+        "MAIL_HOST": "smtp.gmail.com",
+        "MAIL_PORT": "587",
+        "MAIL_ENCRYPTION": "tls",
+        "MAIL_FROM_ADDRESS": "no-reply@smmgplaza.com",
+        "MAIL_FROM_NAME": "SMMG Medical Plaza",
+        "MAIL_EHLO_DOMAIN": "smmg-medical-plaza-web.vercel.app"
     }
 }
